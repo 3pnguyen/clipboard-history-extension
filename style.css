@@ -1,0 +1,95 @@
+body {
+    min-width: 300px;
+    min-height: 350px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(39, 39, 39);
+}
+
+#background {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#title {
+    padding: 20px 0;
+    border-radius: 5px;
+    background-color: #969696;
+    color: #fff;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+#notification {
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: #969696;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    animation: slide-in 0.5s ease-in-out;
+}
+
+/*--------------------------- BUTTONS ---------------------------------*/
+
+button {
+    margin-left: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0054ad;
+    color: #fff;
+    font-weight: bold;
+    animation: slide-in 0.5s ease-in-out;
+}
+button:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+button:active {
+    opacity: 1;
+    transform: translateY(2px);
+}
+
+/*--------------------------- HISTORY LIST ---------------------------------*/
+
+#history {
+    list-style-type: disc;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+
+#history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-position: inside;
+    padding-left: 10px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*---------------------------  ANIMATIONS ---------------------------------*/
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
