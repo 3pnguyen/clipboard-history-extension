@@ -5,4 +5,4 @@ setTimeout(() => {
 document.addEventListener('copy', () => {
     const text = document.getSelection().toString();
     chrome.runtime.sendMessage({type: 'copy', text: text});
-})
+});
