@@ -13,7 +13,9 @@ chrome.runtime.onMessage.addListener((message) => {
         case 'injected':
             console.log("Script injected");
             break;
+            
         default: 
             break;
     }
+
 });
